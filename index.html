@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <script src="https://cdn.jsdelivr.net/npm/vega@5.22.1"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vega-lite@5.2.0"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vega-embed@6.20.8"></script>
+  <style>.main {
+    width: 1200px;
+    background-color: white;
+    margin: auto;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding: 50px;
+    padding-top: 35px;
+  }</style>
+</head>
+
+<body>
+  <div id = "main">
+    <div id="areachart">
+      <script>
+        const spec1 = {
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "data": {
+    "url": "https://raw.githubusercontent.com/mbas0011/global_nuclear_weapons/main/nuclear-warhead-stockpiles.csv"
+  },
+  "title": {
+    "text": "Estimated Nuclear Warhead Stockplies (1945 to 2022)",
+    "subtitle": "*Includes warheads assigned to military forces, but excludes warheads queued for dismantlement"
+  },
+  "width": 400,
+  "height": 300,
+  "encoding": {
+    "x": {
+      "timeUnit": "year",
+      "field": "Year",
+      "axis": {"title": "Year", "grid": false, "format": "%Y"},
+      "title": "Year"
+    }
+  },
+  "layer": [
+    {
+      "encoding": {
+        "y": {
+          "aggregate": "sum",
+          "title": "Estimated Number of Warheads",
+          "field": "nuclear_weapons_stockpile"
+        },
+        "color": {"title": "Country", "field": "Entity", "type": "nominal"}
+      },
+      "layer": [
+        {"mark": "area"},
+        {
+          "transform": [{"filter": {"param": "hover", "empty": false}}],
+          "mark": "point"
+        }
+      ]
+    },
+    {
+      "transform": [
+        {
+          "pivot": "Entity",
+          "value": "nuclear_weapons_stockpile",
+          "groupby": ["Year"]
+        }
+      ],
+      "mark": "rule",
+      "encoding": {
+        "opacity": {
+          "condition": {"value": 0.3, "param": "hover", "empty": false},
+          "value": 0
+        },
+        "tooltip": [
+          {"timeUnit": "year", "field": "Year", "title": "Year"},
+          {"field": "China", "type": "quantitative"},
+          {"field": "France", "type": "quantitative"},
+          {"field": "India", "type": "quantitative"},
+          {"field": "Israel", "type": "quantitative"},
+          {"field": "North Korea", "type": "quantitative"},
+          {"field": "Pakistan", "type": "quantitative"},
+          {"field": "Russia", "type": "quantitative"},
+          {"field": "South Africa", "type": "quantitative"},
+          {"field": "United Kingdom", "type": "quantitative"},
+          {"field": "United States", "type": "quantitative"}
+        ]
+      },
+      "params": [
+        {
+          "name": "Entity",
+          "select": {"type": "point", "fields": ["Entity"]},
+          "bind": "legend"
+        },
+        {
+          "name": "hover",
+          "select": {
+            "type": "point",
+            "fields": ["Year"],
+            "nearest": true,
+            "on": "mouseover",
+            "clear": "mouseout"
+          }
+        }
+      ]
+    }
+  ],
+  "config": {}
+};
+        vegaEmbed("#areachart", spec1, { mode: "vega-lite" }).then(console.log).catch(console.warn);
+      </script>
+    </div>
+    <div id="linechart">
+      <script>
+        const spec2 = {
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "Nuclear Weapon Tests (1945 to 2019)",
+    "subtitle": "*Select countries for closer observation"
+  },
+  "width": "400",
+  "height": 300,
+  "data": {
+    "url": "https://raw.githubusercontent.com/mbas0011/global_nuclear_weapons/main/number-of-nuclear-weapons-tests.csv"
+  },
+  "mark": {"type": "line", "point": false},
+  "params": [
+    {
+      "name": "LegendSel",
+      "select": {"type": "point", "fields": ["Entity"]},
+      "bind": "legend"
+    }
+  ],
+  "encoding": {
+    "x": {
+      "timeUnit": "year",
+      "field": "Year",
+      "axis": {"title": "Year", "grid": false, "format": "%Y"},
+      "title": "Year"
+    },
+    "y": {
+      "aggregate": "sum",
+      "title": "Number of Nuclear Weapon Tests",
+      "field": "nuclear_weapons_tests"
+    },
+    "color": {"title": "Country", "field": "Entity", "type": "nominal"},
+    "opacity": {"condition": {"param": "LegendSel", "value": 1}, "value": 0.2},
+    "tooltip": [
+      {"timeUnit": "year", "field": "Year", "title": "Year"},
+      {"field": "Entity", "type": "ordinal", "title": "Country"},
+      {
+        "field": "nuclear_weapons_tests",
+        "type": "quantitative",
+        "title": "Number of Tests"
+      }
+    ]
+  },
+  "config": {}
+};
+        vegaEmbed("#linechart", spec2, { mode: "vega-lite" }).then(console.log).catch(console.warn);
+      </script>
+    </div>
+  </div>
+</body>
+
+</html>
