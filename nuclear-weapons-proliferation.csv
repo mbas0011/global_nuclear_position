@@ -1,86 +1,256 @@
-Entity,Code,Year,number_nuclweap_consideration,number_nuclweap_pursuit,number_nuclweap_possession
-World,OWID_WRL,1938,0,0,0
-World,OWID_WRL,1939,2,0,0
-World,OWID_WRL,1940,3,0,0
-World,OWID_WRL,1941,3,1,0
-World,OWID_WRL,1942,3,2,0
-World,OWID_WRL,1943,2,3,0
-World,OWID_WRL,1944,2,3,0
-World,OWID_WRL,1945,5,2,1
-World,OWID_WRL,1946,3,2,1
-World,OWID_WRL,1947,4,2,1
-World,OWID_WRL,1948,5,2,1
-World,OWID_WRL,1949,7,1,2
-World,OWID_WRL,1950,7,1,2
-World,OWID_WRL,1951,7,1,2
-World,OWID_WRL,1952,8,0,3
-World,OWID_WRL,1953,7,1,3
-World,OWID_WRL,1954,6,2,3
-World,OWID_WRL,1955,6,4,3
-World,OWID_WRL,1956,7,4,3
-World,OWID_WRL,1957,8,4,3
-World,OWID_WRL,1958,8,4,3
-World,OWID_WRL,1959,6,4,3
-World,OWID_WRL,1960,6,3,4
-World,OWID_WRL,1961,6,3,4
-World,OWID_WRL,1962,7,3,4
-World,OWID_WRL,1963,6,2,4
-World,OWID_WRL,1964,6,2,5
-World,OWID_WRL,1965,6,2,5
-World,OWID_WRL,1966,7,2,5
-World,OWID_WRL,1967,10,0,6
-World,OWID_WRL,1968,9,0,6
-World,OWID_WRL,1969,11,0,6
-World,OWID_WRL,1970,9,2,6
-World,OWID_WRL,1971,8,2,6
-World,OWID_WRL,1972,7,4,6
-World,OWID_WRL,1973,6,4,6
-World,OWID_WRL,1974,6,5,6
-World,OWID_WRL,1975,6,6,6
-World,OWID_WRL,1976,7,5,6
-World,OWID_WRL,1977,6,5,6
-World,OWID_WRL,1978,8,5,6
-World,OWID_WRL,1979,8,4,7
-World,OWID_WRL,1980,5,6,7
-World,OWID_WRL,1981,3,7,7
-World,OWID_WRL,1982,2,7,7
-World,OWID_WRL,1983,3,7,7
-World,OWID_WRL,1984,4,7,7
-World,OWID_WRL,1985,4,7,7
-World,OWID_WRL,1986,4,7,7
-World,OWID_WRL,1987,5,5,9
-World,OWID_WRL,1988,5,4,9
-World,OWID_WRL,1989,3,5,9
-World,OWID_WRL,1990,2,5,9
-World,OWID_WRL,1991,1,4,9
-World,OWID_WRL,1992,0,3,8
-World,OWID_WRL,1993,0,3,8
-World,OWID_WRL,1994,0,3,8
-World,OWID_WRL,1995,0,3,8
-World,OWID_WRL,1996,0,3,8
-World,OWID_WRL,1997,0,3,8
-World,OWID_WRL,1998,0,3,8
-World,OWID_WRL,1999,0,3,8
-World,OWID_WRL,2000,1,3,8
-World,OWID_WRL,2001,1,3,8
-World,OWID_WRL,2002,0,4,8
-World,OWID_WRL,2003,0,4,8
-World,OWID_WRL,2004,0,3,8
-World,OWID_WRL,2005,0,3,8
-World,OWID_WRL,2006,0,2,9
-World,OWID_WRL,2007,0,2,9
-World,OWID_WRL,2008,1,1,9
-World,OWID_WRL,2009,1,1,9
-World,OWID_WRL,2010,1,1,9
-World,OWID_WRL,2011,1,1,9
-World,OWID_WRL,2012,1,1,9
-World,OWID_WRL,2013,1,1,9
-World,OWID_WRL,2014,1,1,9
-World,OWID_WRL,2015,1,1,9
-World,OWID_WRL,2016,1,1,9
-World,OWID_WRL,2017,1,1,9
-World,OWID_WRL,2018,1,1,9
-World,OWID_WRL,2019,1,1,9
-World,OWID_WRL,2020,1,1,9
-World,OWID_WRL,2021,1,1,9
-World,OWID_WRL,2022,1,1,9
+Status,Year,number_countries
+Considering ,1938,0
+Considering ,1939,2
+Considering ,1940,3
+Considering ,1941,3
+Considering ,1942,3
+Considering ,1943,2
+Considering ,1944,2
+Considering ,1945,5
+Considering ,1946,3
+Considering ,1947,4
+Considering ,1948,5
+Considering ,1949,7
+Considering ,1950,7
+Considering ,1951,7
+Considering ,1952,8
+Considering ,1953,7
+Considering ,1954,6
+Considering ,1955,6
+Considering ,1956,7
+Considering ,1957,8
+Considering ,1958,8
+Considering ,1959,6
+Considering ,1960,6
+Considering ,1961,6
+Considering ,1962,7
+Considering ,1963,6
+Considering ,1964,6
+Considering ,1965,6
+Considering ,1966,7
+Considering ,1967,10
+Considering ,1968,9
+Considering ,1969,11
+Considering ,1970,9
+Considering ,1971,8
+Considering ,1972,7
+Considering ,1973,6
+Considering ,1974,6
+Considering ,1975,6
+Considering ,1976,7
+Considering ,1977,6
+Considering ,1978,8
+Considering ,1979,8
+Considering ,1980,5
+Considering ,1981,3
+Considering ,1982,2
+Considering ,1983,3
+Considering ,1984,4
+Considering ,1985,4
+Considering ,1986,4
+Considering ,1987,5
+Considering ,1988,5
+Considering ,1989,3
+Considering ,1990,2
+Considering ,1991,1
+Considering ,1992,0
+Considering ,1993,0
+Considering ,1994,0
+Considering ,1995,0
+Considering ,1996,0
+Considering ,1997,0
+Considering ,1998,0
+Considering ,1999,0
+Considering ,2000,1
+Considering ,2001,1
+Considering ,2002,0
+Considering ,2003,0
+Considering ,2004,0
+Considering ,2005,0
+Considering ,2006,0
+Considering ,2007,0
+Considering ,2008,1
+Considering ,2009,1
+Considering ,2010,1
+Considering ,2011,1
+Considering ,2012,1
+Considering ,2013,1
+Considering ,2014,1
+Considering ,2015,1
+Considering ,2016,1
+Considering ,2017,1
+Considering ,2018,1
+Considering ,2019,1
+Considering ,2020,1
+Considering ,2021,1
+Considering ,2022,1
+Pursuing,1938,0
+Pursuing,1939,0
+Pursuing,1940,0
+Pursuing,1941,1
+Pursuing,1942,2
+Pursuing,1943,3
+Pursuing,1944,3
+Pursuing,1945,2
+Pursuing,1946,2
+Pursuing,1947,2
+Pursuing,1948,2
+Pursuing,1949,1
+Pursuing,1950,1
+Pursuing,1951,1
+Pursuing,1952,0
+Pursuing,1953,1
+Pursuing,1954,2
+Pursuing,1955,4
+Pursuing,1956,4
+Pursuing,1957,4
+Pursuing,1958,4
+Pursuing,1959,4
+Pursuing,1960,3
+Pursuing,1961,3
+Pursuing,1962,3
+Pursuing,1963,2
+Pursuing,1964,2
+Pursuing,1965,2
+Pursuing,1966,2
+Pursuing,1967,0
+Pursuing,1968,0
+Pursuing,1969,0
+Pursuing,1970,2
+Pursuing,1971,2
+Pursuing,1972,4
+Pursuing,1973,4
+Pursuing,1974,5
+Pursuing,1975,6
+Pursuing,1976,5
+Pursuing,1977,5
+Pursuing,1978,5
+Pursuing,1979,4
+Pursuing,1980,6
+Pursuing,1981,7
+Pursuing,1982,7
+Pursuing,1983,7
+Pursuing,1984,7
+Pursuing,1985,7
+Pursuing,1986,7
+Pursuing,1987,5
+Pursuing,1988,4
+Pursuing,1989,5
+Pursuing,1990,5
+Pursuing,1991,4
+Pursuing,1992,3
+Pursuing,1993,3
+Pursuing,1994,3
+Pursuing,1995,3
+Pursuing,1996,3
+Pursuing,1997,3
+Pursuing,1998,3
+Pursuing,1999,3
+Pursuing,2000,3
+Pursuing,2001,3
+Pursuing,2002,4
+Pursuing,2003,4
+Pursuing,2004,3
+Pursuing,2005,3
+Pursuing,2006,2
+Pursuing,2007,2
+Pursuing,2008,1
+Pursuing,2009,1
+Pursuing,2010,1
+Pursuing,2011,1
+Pursuing,2012,1
+Pursuing,2013,1
+Pursuing,2014,1
+Pursuing,2015,1
+Pursuing,2016,1
+Pursuing,2017,1
+Pursuing,2018,1
+Pursuing,2019,1
+Pursuing,2020,1
+Pursuing,2021,1
+Pursuing,2022,1
+Posessing,1938,0
+Posessing,1939,0
+Posessing,1940,0
+Posessing,1941,0
+Posessing,1942,0
+Posessing,1943,0
+Posessing,1944,0
+Posessing,1945,1
+Posessing,1946,1
+Posessing,1947,1
+Posessing,1948,1
+Posessing,1949,2
+Posessing,1950,2
+Posessing,1951,2
+Posessing,1952,3
+Posessing,1953,3
+Posessing,1954,3
+Posessing,1955,3
+Posessing,1956,3
+Posessing,1957,3
+Posessing,1958,3
+Posessing,1959,3
+Posessing,1960,4
+Posessing,1961,4
+Posessing,1962,4
+Posessing,1963,4
+Posessing,1964,5
+Posessing,1965,5
+Posessing,1966,5
+Posessing,1967,6
+Posessing,1968,6
+Posessing,1969,6
+Posessing,1970,6
+Posessing,1971,6
+Posessing,1972,6
+Posessing,1973,6
+Posessing,1974,6
+Posessing,1975,6
+Posessing,1976,6
+Posessing,1977,6
+Posessing,1978,6
+Posessing,1979,7
+Posessing,1980,7
+Posessing,1981,7
+Posessing,1982,7
+Posessing,1983,7
+Posessing,1984,7
+Posessing,1985,7
+Posessing,1986,7
+Posessing,1987,9
+Posessing,1988,9
+Posessing,1989,9
+Posessing,1990,9
+Posessing,1991,9
+Posessing,1992,8
+Posessing,1993,8
+Posessing,1994,8
+Posessing,1995,8
+Posessing,1996,8
+Posessing,1997,8
+Posessing,1998,8
+Posessing,1999,8
+Posessing,2000,8
+Posessing,2001,8
+Posessing,2002,8
+Posessing,2003,8
+Posessing,2004,8
+Posessing,2005,8
+Posessing,2006,9
+Posessing,2007,9
+Posessing,2008,9
+Posessing,2009,9
+Posessing,2010,9
+Posessing,2011,9
+Posessing,2012,9
+Posessing,2013,9
+Posessing,2014,9
+Posessing,2015,9
+Posessing,2016,9
+Posessing,2017,9
+Posessing,2018,9
+Posessing,2019,9
+Posessing,2020,9
+Posessing,2021,9
+Posessing,2022,9
