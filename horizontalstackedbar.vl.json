@@ -1,0 +1,76 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": "Gloabl Nuclear Forces Inventory Breakdown",
+  "width": 460,
+  "height": 400,
+  "data": {
+    "url": "https://raw.githubusercontent.com/mbas0011/global_nuclear_weapons/main/Status%20of%20Nuclear%20forces.csv"
+  },
+  "mark": "bar",
+  "params": [
+    {
+      "name": "Country_selection",
+      "bind": {
+        "input": "select",
+        "options": [
+          null,
+          "China",
+          "France",
+          "India",
+          "Israel",
+          "North Korea",
+          "Pakistan",
+          "Russia",
+          "United Kingdom",
+          "United States"
+        ],
+        "labels": [
+          "Show All",
+          "China",
+          "France",
+          "India",
+          "Israel",
+          "North Korea",
+          "Pakistan",
+          "Russia",
+          "United Kingdom",
+          "United States"
+        ],
+        "name": "Country Selection: "
+      }
+    }
+  ],
+  "transform": [
+    {
+      "filter": "Country_selection == null || datum.Country == Country_selection"
+    }
+  ],
+  "encoding": {
+    "x": {"aggregate": "sum", "field": "Value", "title": "Number of Warheads"},
+    "y": {"field": "Type", "title": "Inventory Type"},
+    "color": {
+      "field": "Country",
+      "type": "nominal",
+      "scale": {
+        "domain": [
+          "China",
+          "France",
+          "India",
+          "Israel",
+          "North Korea",
+          "Pakistan",
+          "Russia",
+          "United Kingdom",
+          "United States"
+        ],
+        "scheme": "turbo"
+      }
+    },
+    "tooltip": [
+      {"field": "Type", "title": "Type"},
+      {"field": "Country", "type": "ordinal", "title": "Country"},
+      {"field": "Value", "type": "quantitative", "title": "Number of Warheads"}
+    ]
+  },
+  "config": {}
+}

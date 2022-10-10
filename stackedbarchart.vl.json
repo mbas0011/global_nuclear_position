@@ -1,0 +1,42 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": "Nuclear Weapon Proliferation (1938 to 2019)",
+  "width": 570,
+  "height": 320,
+  "data": {
+    "url": "https://raw.githubusercontent.com/mbas0011/global_nuclear_weapons/main/nuclear-weapons-proliferation.csv"
+  },
+  "mark": {"type": "bar", "point": false},
+  "params": [
+    {
+      "name": "LegendSel",
+      "select": {"type": "point", "fields": ["Status"]},
+      "bind": "legend"
+    }
+  ],
+  "encoding": {
+    "x": {
+      "timeUnit": "year",
+      "field": "Year",
+      "axis": {"title": "Year", "grid": false, "format": "%Y"},
+      "title": "Year"
+    },
+    "y": {
+      "aggregate": "sum",
+      "title": "Number of Countries",
+      "field": "number_countries"
+    },
+    "color": {"title": "World Status", "field": "Status", "type": "nominal"},
+    "opacity": {"condition": {"param": "LegendSel", "value": 1}, "value": 0.2},
+    "tooltip": [
+      {"timeUnit": "year", "field": "Year", "title": "Year"},
+      {"field": "Status", "type": "ordinal", "title": "Status"},
+      {
+        "field": "number_countries",
+        "type": "quantitative",
+        "title": "Number of Countries"
+      }
+    ]
+  },
+  "config": {}
+}

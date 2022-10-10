@@ -1,0 +1,45 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "Nuclear Weapon Tests (1945 to 2019)",
+    "subtitle": "*Select countries for closer observation"
+  },
+  "width": 550,
+  "height": 300,
+  "data": {
+    "url": "https://raw.githubusercontent.com/mbas0011/global_nuclear_weapons/main/number-of-nuclear-weapons-tests.csv"
+  },
+  "mark": {"type": "line", "point": false},
+  "params": [
+    {
+      "name": "LegendSel",
+      "select": {"type": "point", "fields": ["Entity"]},
+      "bind": "legend"
+    }
+  ],
+  "encoding": {
+    "x": {
+      "timeUnit": "year",
+      "field": "Year",
+      "axis": {"title": "Year", "grid": false, "format": "%Y"},
+      "title": "Year"
+    },
+    "y": {
+      "aggregate": "sum",
+      "title": "Number of Nuclear Weapon Tests",
+      "field": "nuclear_weapons_tests"
+    },
+    "color": {"title": "Country", "field": "Entity", "type": "nominal"},
+    "opacity": {"condition": {"param": "LegendSel", "value": 1}, "value": 0.2},
+    "tooltip": [
+      {"timeUnit": "year", "field": "Year", "title": "Year"},
+      {"field": "Entity", "type": "ordinal", "title": "Country"},
+      {
+        "field": "nuclear_weapons_tests",
+        "type": "quantitative",
+        "title": "Number of Tests"
+      }
+    ]
+  },
+  "config": {}
+}
