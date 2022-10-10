@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Global Nuclear Weapons</title>
+
+    <!-- Import Vega & Vega=Lite (does not have to be from CDN) -->
+    <script src="https://cdn.jsdelivr.net/npm/vega@5.20.2"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-lite@5.1.0"></script>
+
+    <!-- Import Vega-Embed -->
+    <script src="https://cdn.jsdelivr.net/npm/vega-embed@6"></script>
+
+    <!-- Import pure.css -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/purecss@2.0.3/build/pure-min.css"
+      integrity="sha384-cg6SkqEOCV1NbJoCu11+bm0NvBRc8IYLRGXkmNrqUBfTjmMYwNKPWBTIKyw9mHNJ"
+      crossorigin="anonymous"
+    />
+
+    <!-- Import CSS file -->
+    <link rel="stylesheet" type="text/css" href="style.css" media="all" />
+
+    <!-- Google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;600;800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="page">
+      <!-- Heading and Introduction-->
+      <div class="pure-g">
+        <div class="pure-u-1-1">
+          <div class="h1">
+            <h1>Global Nuclear Weapons</h1>
+          </div>
+          <div class="titlepara">
+            <p>
+              <a class="green">Nuclear Weapons</a>
+              <a class="bold">have been a hot topic amongst nations since the Manhattan Project 
+                took place in 1942 during World War II. Over the duration of the </a>
+              <a class="red">Cold War</a> and
+              <a class="brown">Arms Race</a>, 
+              <a class="bold">many nations pursued the posession of <a class="green">nuclear weapons</a> such that they could become one of the world's nuclear powerhouses.</a> 
+              <a class="green">Nuclear Weapons</a> can have
+              <a class="bold">a catastropic impact with the ability to kill millions and decimate land. Since the end of the </a>
+              <a class="red">Cold War</a>, only 9 countries have nuclear weapons in their arsenal in 2022.
+              <a class="bold">This page will go through the history of nuclear weapons and how the risk of nuclear warfare has been mitigated over time.</a>
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- End of Heading and Introduction-->
+
+      <!-- First Section Heading -->
+      <div class="pure-g">
+        <div class="pure-u-1-1">
+          <div class="h2">
+            <h2>
+                Nuclear Weapon Proliferation over Time
+            </h2>
+          </div>
+        </div>
+      </div>
+      <!-- End of First Section Heading -->
+
+      <!-- Block for Visualisation 1 -->
+      <div class="pure-u-1-1">
+        <div id="map" class="vis-container"></div>
+      </div>
+
+      <div class="pure-g">
+        <div class="pure-u-1-3">
+          <div class="textcontent">
+            <div class="border">
+                <p style="padding-left: 15px;">
+                    Since 1939, the number of countries considering, pursuing, and stockpiling 
+                    <a class="green">nuclear weapons</a> has dramatically changed. At the height of the
+                    <a class="red">Cold War</a>, almost 20 nations fell under these three categories for
+                    <a class="green">nuclear weapons</a> proliferation. In 2022, there are only 9 sovereign states with <a class="green">nuclear weapon</a> capabilities: 
+                    United States, Russia, United Kingdom, France, China, India, Pakistan, Israel, and North Korea. 
+                    There is a common misconception that many other countries pursued <a class="green">nuclear weapon</a> capability since the Second World War. 
+                    </br></br>However, the map above demonstrates that only a few countries have ever possessed (stockpiled)
+                    <a class="green">nuclear weapons</a>, and only a few pursue and have considered <a class="green">nuclear weapons</a>
+                    over time. In regard to proliferation, the chart to the right shows that nations considering, pursuing, or possessing
+                    <a class="green">nuclear weapons</a> peaked during the <a class="red">Cold War</a> around 1980. 
+                    The number of nations has since reduced where only Syria considers them, and Iran pursues them along with the 9 countries that stockpile
+                    <a class="green">nuclear weapons</a>.
+                </p>
+            </div>   
+          </div>
+        </div>
+        
+        <div class="pure-u-2-3">
+          <div id="stacked_bar" class="vis-box"></div>
+        </div>
+
+      </div>
+      <!-- End Block for Visualisation 1-->
+
+      <!-- Second Section Heading -->
+      <div class="pure-g">
+        <div class="pure-u-1-1">
+          <div class="h2">
+            <h2>
+                Nuclear Weapons Testing 
+            </h2>
+          </div>
+        </div>
+      </div>
+      <!-- End of Second Section Heading -->
+
+      <!-- Block for Visualisation 2 -->
+      <div class="pure-g">
+        <div class="pure-u-1-3">
+          <div class="textcontent">
+            <div class="border2">
+            <p style="padding-left: 15px;">
+              The adjacent chart shows the number of <a class="green">nuclear weapon</a> tests that 
+              have taken place since 1945. As noted above, we can see that the 
+              <a class="red">Cold War</a>, was the most active period where almost 180  <a class="green">nuclear weapons</a> tests took place in 1962 alone. 
+              The increased number of tests during the <a class="red">Cold War</a> can be attributed to the 
+              <a class="brown">Arms Race</a> where the United States and Russia were competing to increase the sizer and quality of 
+              their military resources to gain superiority over one another.
+              <br><br> The world's first nuclear bomb test codenamed 
+              <a class="blue">Trinity</a> took place on July 16, 1945. An image of the test is shown below. However,
+              <a class="green">nuclear weapons</a> were only used in warfare during the Second World War, when American bombers 
+              deployed the atomic bomb over the Japanese cities of
+              <a class="blue">Hiroshima</a> and <a class="blue">Nagasaki</a> in an effort to bring about Japan's surrender to end the war (images below). Since the 
+              Japanese bombings, there has been no use of atomic bombs in warfare. Despite this, the world nuclear powerhouses have amassed over 2000 <a class="green">nuclear weapons</a> tests to date. 
+            </p>
+            </div>
+          </div>
+        </div>
+        <div class="pure-u-2-3">
+          <div id="line_chart" class="vis-box"></div>
+        </div>
+        <div class="pure-u-1-3">
+            <img src="Trinity_Detonation.jpeg" alt="Trinity" width="350" height="300">
+        </div>
+        <div class="pure-u-1-3">
+            <img src="Hiroshima_Damage.jpeg" alt="Japan" width="350" height="300">
+        </div>
+        <div class="pure-u-1-3">
+            <img src="Atomic_bombing_of_Japan.jpeg" alt="Japan" width="350" height="300">
+        </div>
+
+        <div class="pure-u-1-3">
+            <div class="textcontent">
+              <div class="border2a">
+                <p style="padding-left: 15px;">
+                    Image Source: <a style="color:white"><a href=https://en.wikipedia.org/wiki/Trinity_(nuclear_test)> Wikipedia</a></a>
+                    <br><br>
+                    <a class="blue">Trinity</a> was the codename for the first detonation of <a class="green">nuclear weapon</a> as part
+                    of the Manhattan Project. The device was nicknamed "The Gadget" that released around
+                    25 kilotons of TNT of explosive energy. The test site was lated declared a National Historic Landmark in 1965.
+                </p>
+              </div>
+            </div>
+        </div>
+
+        <div class="pure-u-1-3">
+            <div class="textcontent">
+              <div class="border2a">
+                <p style="padding-left: 15px;">
+                    Image Source: <a style="color:white"><a href=https://www.nbcnews.com/news/world/atomic-bomb-dropped-japan-s-hiroshima-75-years-ago-still-n1235849> NBC News</a></a>
+                    <br><br>
+                    The image above illustrates the aftermath of the first atomic bomb ever used in warfare.
+                    <a class="blue">Hiroshima</a> was the town in Japan that experienced the first ever <a class="green">nuclear weapon</a> as part
+                    detonation. The result of the bombing was an estimated 140,000 casualties.  
+                </p>
+              </div>
+            </div>
+        </div>
+
+        <div class="pure-u-1-3">
+            <div class="textcontent">
+              <div class="border2a">
+                <p style="padding-left: 15px;">
+                    Image Source: <a style="color:white"><a href=https://en.wikipedia.org/wiki/Atomic_bombings_of_Hiroshima_and_Nagasaki> Wikipedia</a></a>
+                    <br><br>
+                    The image above depsicts the mushroom clouds from the 
+                    <a class="blue">Hiroshima</a> (left) and <a class="blue">Nagasaki</a> (right) bombings.
+                    These remain the only use of <a class="green">nuclear weapons</a> in armed conflict hold 
+                    significance due to the Japanese later surrendering to The Allies, effectively ending the war.
+                </p>
+              </div>
+            </div>
+        </div>
+
+      </div>
+      <!-- End Block for Visualisation 2 -->
+
+      <!-- Third Section Heading -->
+      <div class="pure-g">
+        <div class="pure-u-1-1">
+          <div class="h2">
+            <h2>
+                Global Inventory and Stockpiles
+            </h2>
+          </div>
+        </div>
+      </div>
+      <!-- End of Third Section Heading -->
+
+      <!-- Block for Visualisation 3 -->
+      <div class="pure-g">
+        <div class="pure-u-1-3">
+          <div class="textcontent">
+            <div class="border3">
+            <p style="padding-left: 15px;">
+                A way to quantify the proliferation of <a class="green">nuclear weapons</a> 
+                over time is to look at the stockpiles and inventories of countries over time. 
+                The estimated inventories of countries are larger than the nuclear warhead stockpiles as 
+                they do not include retired warheads queued for dismantlement. 
+                <br><br>
+                The chart to the right illustrates the estimated number of warheads in a countries military stockpile over time. 
+                As we can see the number of warheads has reduced significantly since the peak of military 
+                stockpiles in 1986, mitigating the risk and potential arsenal of nuclear powerhouse nations over time. 
+                <br><br>
+                The reduction in <a class="green">nuclear weapon</a> stockpiles can be attributed to the
+                end of the <a class="red">Cold War</a> combined with the global reduction in nuclear missile spending.
+                Furthermore, safeguards and treaties have been established to ban nuclear warfare. This aims to avoid any future misconduct
+                and deter countries from engaging in nuclear combat to prevent the world from suffering catastrophic damage.
+            </p>
+            </div>
+          </div>
+        </div>
+        <div class="pure-u-2-3">
+          <div id="area_chart" class="vis-box"></div>
+        </div>
+      </div>
+      <!-- End Block for Visualisation 3-->
+
+    <!-- Block for Visualisation 4 -->
+    <div class="pure-g">
+        <div class="pure-u-1-3">
+          <div class="textcontent">
+            <div class="border4">
+            <p style="padding-left: 15px;">
+                Despite this progress, the nine world nuclear powers still possess around 12,700 
+                warheads as of 2022 with 90% of warheads owned by the United States and Russia. 
+                Due to the retiring of warheads, global inventories have been decreasing over the 
+                past 30 years. However, it is believed that China, India, North Korea, Pakistan and 
+                the United Kingdom, and possibly Russia, are suspected to still be increasing their 
+                stockpiles. The table below illustrates the breakdown of global nuclear power arsenals where: 
+              <br><br>
+              <ul>
+                <li><a class="purple">Deployed Non-Strategic</a> <a class="white">warheads are those deployed on 
+                    bases with operational short-range delivery systems</a>
+                </li>
+                <li><a class="purple">Deployed Strategic</a> <a class="white">warheads are those deployed on 
+                    intercontinental missiles and at heavy bomber bases</a>
+                </li>
+                <li><a class="purple">Reserve (Non-Deployed)</a> <a class="white">warheads are those not 
+                    deployed on launchers but in storage </a>
+                </li>
+                <li><a class="purple">Military Stockpile</a> <a class="white">includes active/inactive 
+                    warheads that are in the custody of the military </a>
+                </li>
+                <li><a class="purple">Retired</a> <a class="white">warheads includes non-functional 
+                    warheads removed from its delivery platform that is not part of a country's stockpile </a>
+                </li>
+              </ul>
+            </p>
+            </div>
+          </div>
+        </div>
+        <div class="pure-u-2-3">
+          <div id="horizontal_stacked_bar" class="vis-box"></div>
+        </div>
+      </div>
+      <!-- End Block for Visualisation 4-->  
+
+      <!-- Fourth Section Heading -->
+      <div class="pure-g">
+        <div class="pure-u-1-1">
+          <div class="h2">
+            <h2>
+                What does this mean for the future? 
+            </h2>
+          </div>
+        </div>
+      </div>
+      <!-- End of Fourth Section Heading -->
+
+      <!-- Block for Conclusion -->
+      <div class="pure-g">
+        <div class="pure-u-1-1">
+          <div class="textcontent">
+            <div class="border5">
+            <p style="padding-left: 15px;">
+              Despite the slow decline of  <a class="green">nuclear weapon</a> 
+              proliferation, bomb testing and arsenal size over the last 30 years,
+              <a class="green">nuclear weapons</a> still remain necessary for global nuclear powers.
+              As opposed to discussing nuclear disarmament, global nuclear powers have planned to retain 
+              or even increase their arsenals in the near future. This can be attributed to the disagreement 
+              regarding nuclear non-proliferation treaties and strategies. With the current political climate, 
+              the use of <a class="green">nuclear weapons</a> are not looking to slow down, but rather act 
+              as a deterrent for other nations to remain out of conflict. This is done with the goal to 
+              maintain the maximum possible level of global peace in mind today. 
+            </p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="pure-g">
+            <div class="pure-u-1-1">
+              <div class=border6>
+              <p style="padding-left: 15px;">This visualisation was created by Sean Bastians
+              </br> All data was sourced from the <a style="color:white"><a href=https://fas.org/issues/nuclear-weapons/status-world-nuclear-forces/> Federation of American Scientists</a></a>
+              and <a style="color:white"><a href=https://ourworldindata.org/nuclear-weapons> Our World in Data</a></a>
+              </p>
+              </div>
+            </div>
+          </div>
+      <!-- End Block for Conclusion-->
+
+      
+      <!-- End Block for Visualisation 6-->
+      
+      
+    </div>
+    <!-- Embed the Vega Lite visualisations -->
+    <script type="text/javascript">
+      var map = "choroplethmap.vl.json";
+      var stacked_bar = "stackedbarchart.vl.json";
+      var line_chart = "linechart.vl.json";
+      var area_chart = "areachart.vl.json";
+      var horizontal_stacked_bar = "horizontalstackedbar.vl.json";
+      var heat = "heatmap.vg.json";
+
+      vegaEmbed("#map", map)
+        .then(function (result) {})
+        .catch(console.error);
+
+    vegaEmbed("#stacked_bar", stacked_bar)
+        .then(function (result) {})
+        .catch(console.error);
+
+      vegaEmbed("#line_chart", line_chart)
+        .then(function (result) {})
+        .catch(console.error);
+
+      vegaEmbed("#area_chart", area_chart)
+        .then(function (result) {})
+        .catch(console.error);
+
+      vegaEmbed("#horizontal_stacked_bar", horizontal_stacked_bar)
+        .then(function (result) {})
+        .catch(console.error);
+
+      vegaEmbed("#heat", heat)
+        .then(function (result) {})
+        .catch(console.error);
+    </script>
+  </body>
+</html>
