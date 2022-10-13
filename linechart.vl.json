@@ -6,11 +6,10 @@
   "vconcat": [
     {
       "title": {
-        "text":"Nuclear Weapon Tests (1945 to 2019)",
-        "subtitle": "*Select countries for closer observation"
+        "text":"Nuclear Weapon Tests (1945 to 2019)"
       },
-      "width": 550,
-      "height": 240,
+      "width": 585,
+      "height": 210,
       "mark": {
         "type": "line",
         "point": true
@@ -37,10 +36,11 @@
         "y": {
           "aggregate": "sum", 
           "title": "Number of Nuclear Weapon Tests",
-          "field": "nuclear_weapons_tests"
+          "field": "nuclear_weapons_tests",
+          "axis": {"grid": false, "ticks": false}
         },
         "color": {
-          "title": "Country",
+          "title": "Select Country:",
           "field":"Entity",
           "type": "nominal"
         },
@@ -69,7 +69,7 @@
     },
     {
       "title": "Select Pane and Scroll for closer observation",
-      "width": 550,
+      "width": 585,
       "height": 60,
       "mark": "area",
       "params": [
@@ -92,10 +92,10 @@
         "y": {
           "aggregate": "sum", 
           "title": "Number of Nuclear Weapon Tests",
-          "field": "nuclear_weapons_tests"
+          "field": "nuclear_weapons_tests",
+          "axis": {"grid": false, "ticks": false}
         },
         "color": {
-          "title": "Country",
           "field":"Entity",
           "type": "nominal"
         },

@@ -1,7 +1,7 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "title": "Nuclear Weapon Proliferation (1938 to 2019)",
-  "width": 540,
+  "width": 585,
   "height": 300,
   "data": {
     "url": "https://raw.githubusercontent.com/mbas0011/global_nuclear_weapons/main/nuclear-warhead-stockpiles.csv"
@@ -53,7 +53,8 @@
     "y": {
       "aggregate": "sum",
       "title": "Estimated Number of Warheads",
-      "field": "nuclear_weapons_stockpile"
+      "field": "nuclear_weapons_stockpile",
+      "axis": {"grid": false, "ticks": false}
     },
     "color": {
       "field": "Entity",

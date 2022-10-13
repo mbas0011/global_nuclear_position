@@ -1,13 +1,13 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "title": "Global Posession of Nuclear Weapons (1938 to 2022)",
-  "width": 900,
+  "width": 955,
   "height": 400,
   "projection": { "type": "equalEarth" },
   "params": [
     {
       "name": "Year_selection",
-      "value": 2020,
+      "value": 1980,
       "bind": {
         "input": "range",
         "min": 1938,
@@ -85,10 +85,6 @@
     }
   ],
   "config": {
-    "background": "white",
-    "group": 
-    {
-      "fill": "#3182bd"
-    }
+    "background": "#3182bd"
   }
 }

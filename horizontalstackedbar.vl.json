@@ -1,7 +1,7 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "title": "Gloabl Nuclear Forces Inventory Breakdown",
-  "width": 460,
+  "width": 500,
   "height": 400,
   "data": {
     "url": "https://raw.githubusercontent.com/mbas0011/global_nuclear_weapons/main/Status%20of%20Nuclear%20forces.csv"
@@ -46,7 +46,7 @@
     }
   ],
   "encoding": {
-    "x": {"aggregate": "sum", "field": "Value", "title": "Number of Warheads"},
+    "x": {"aggregate": "sum", "field": "Value", "title": "Number of Warheads", "axis": {"grid": false, "ticks": false}},
     "y": {"field": "Type", "title": "Inventory Type"},
     "color": {
       "field": "Country",
