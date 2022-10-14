@@ -1,12 +1,88 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "title": "Nuclear Weapon Proliferation (1938 to 2019)",
-  "width": 585,
-  "height": 300,
   "data": {
     "url": "https://raw.githubusercontent.com/mbas0011/global_nuclear_weapons/main/nuclear-warhead-stockpiles.csv"
   },
-  "mark": "area",
+  "title": "Nuclear Weapon Proliferation (1938 to 2019)",
+  "width": 585,
+  "height": 300,
+  "layer": [
+    {  
+    "encoding": {
+      "color": {
+        "field": "Entity",
+        "type": "nominal",
+        "title": "Country",
+        "scale": {
+          "domain": [
+            "China",
+            "France",
+            "India",
+            "Israel",
+            "North Korea",
+            "Pakistan",
+            "Russia",
+            "United Kingdom",
+            "United States"
+          ],
+          "scheme": "turbo"
+        }
+      },
+      "y": {
+        "aggregate": "sum",
+        "title": "Estimated Number of Warheads",
+        "field": "nuclear_weapons_stockpile",
+        "axis": {"grid": false, "ticks": false}
+      },
+      "x": {
+        "timeUnit": "year",
+        "field": "Year",
+        "axis": {"title": "Year", "grid": false, "format": "%Y"},
+        "title": "Year"
+      },
+      "tooltip": [
+        {"timeUnit": "year", "field": "Year", "title": "Year"},
+        {"field": "Entity", "type": "nominal", "title": "Country"},
+        {
+          "field": "nuclear_weapons_stockpile",
+          "type": "quantitative",
+          "title": "Estimated No. Warheads"
+        }
+    ]
+  },
+  "layer": [{"mark": "area"}]    
+},
+    {
+      "mark": {
+        "type": "text", 
+        "align": "center", 
+        "dx": -180, 
+        "dy": -285
+      },
+      "encoding": {
+        "x": {"value": "width"},
+        "y": {"value": "height"},
+        "text": {
+          "value": "1986: Russian stockpiles peak "
+        }
+      }
+    },
+    {
+      "mark": {
+        "type": "text", 
+        "align": "center", 
+        "dx": -480, 
+        "dy": -200
+      },
+      "encoding": {
+        "x": {"value": "width"},
+        "y": {"value": "height"},
+        "text": {
+          "value": "Détente and Arms Control, 1969 - 1979 "
+        }
+      }
+    }
+  ],
   "params": [
     {
       "name": "Country_selection",
@@ -43,46 +119,5 @@
   "transform": [
     {"filter": "Country_selection == null || datum.Entity == Country_selection"}
   ],
-  "encoding": {
-    "x": {
-      "timeUnit": "year",
-      "field": "Year",
-      "axis": {"title": "Year", "grid": false, "format": "%Y"},
-      "title": "Year"
-    },
-    "y": {
-      "aggregate": "sum",
-      "title": "Estimated Number of Warheads",
-      "field": "nuclear_weapons_stockpile",
-      "axis": {"grid": false, "ticks": false}
-    },
-    "color": {
-      "field": "Entity",
-      "type": "nominal",
-      "scale": {
-        "domain": [
-          "China",
-          "France",
-          "India",
-          "Israel",
-          "North Korea",
-          "Pakistan",
-          "Russia",
-          "United Kingdom",
-          "United States"
-        ],
-        "scheme": "turbo"
-      }
-    },
-    "tooltip": [
-      {"timeUnit": "year", "field": "Year", "title": "Year"},
-      {"field": "Entity", "type": "nominal", "title": "Country"},
-      {
-        "field": "nuclear_weapons_stockpile",
-        "type": "quantitative",
-        "title": "Estimated No. Warheads"
-      }
-    ]
-  },
   "config": {}
 }
