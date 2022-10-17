@@ -63,7 +63,7 @@
           "United Kingdom",
           "United States"
         ],
-        "scheme": "turbo"
+        "scheme": "viridis"
       }
     },
     "tooltip": [

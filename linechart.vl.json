@@ -97,7 +97,21 @@
         },
         "color": {
           "field":"Entity",
-          "type": "nominal"
+          "type": "nominal",
+          "scale": {
+            "domain": [
+              "China",
+              "France",
+              "India",
+              "Israel",
+              "North Korea",
+              "Pakistan",
+              "Russia",
+              "United Kingdom",
+              "United States"
+            ],
+            "scheme": "inferno"
+          }
         },
         "opacity": {
           "condition": {"param": "LegendSel", "value": 1},
